@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-app';
+  recipesSelected: boolean = true
+
+  onNavigation(isRecipe: boolean) {
+    if (isRecipe === true) {
+      this.recipesSelected = true
+    } else {
+      this.recipesSelected = false
+    }
+  }
 }
